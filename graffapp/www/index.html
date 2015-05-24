@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title><meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.5.css" />
+<link rel="stylesheet" href="css/glisse.css" />
+<link rel="stylesheet" href="css/app.css" />
+<script src="js/jquery.js"></script>
+<script src="js/glisse.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script type ="text/javascript">
+window.onload=timeout;
+function timeout(){
+window.setTimeout("redirect()",3000)
+}
+function redirect(){
+window.location="#main"
+return
+}
+$(function () {
+    $('.pics').glisse({
+        changeSpeed: 550, 
+        speed: 500,
+        effect:'bounce',
+        fullscreen: true
+    }); 
+});
+</script>
+</head>
+
+<body>
+
+<!-- awal -->
+	<div data-role="page" id="splash" class="app">		
+		</div>
+	
+
+	<div data-role="page" id="main">
+		<div data-role="header" data-position="fixed">
+			<h1>Lukisan Dinding</h1>			
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li style="padding:2pt">
+					<a href="#graffiti">
+						<img src="img/graffiti.png"/>
+						<h4>Graffiti</h4>
+						<p>Informasi tentang Graffiti</p>
+						<span class="ul-li-count">5</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#mural">
+						<img src="img/mural.jpg"/>
+						<h4>Mural</h4>
+						<p>Informasi tentang Mural</p>
+						<span class="ul-li-count">2</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#doodle">
+						<img src="img/doodle.jpg"/>
+						<h4>Doodle art</h4>
+						<p>Informasi tentang Doodle Art</p>
+						<span class="ul-li-count">2</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#info" data-icon="info">info</a></li>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- info -->	
+		
+	<div data-role="page" id="info" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#main"  data-icon="arrow-l"data-rel="back">back</a>
+			<h1>About Us</h1>
+		</div>
+		<div>
+			<img class="pics" src="img/info.jpg" data-glisse-big="img/info.jpg" height="150px" width="320px"/>
+					
+			<p>Jika agan tinggal di kota-kota besar, pasti tak asing dengan bentuk coretan ataupun gambar yang menghiasi sudut-sudut kota. coretan tersebut tak jarang menarik perhatian agan ketika melihatnya. banyak kalangan yang menilai coretan coretan tersebut hanya sebuah vandalisme atau pengrusakan, dalam artian pengrusakan terhadap fasilitas publik. disisi lain, coretan coretan tersebut dinilai menjadi salah satu bagian dari media penyampaian aspirasi atau unek-unek dari sebagian golongan terhadap publik.
+				</p>	
+			</div>
+
+		
+		<div data-role="footer" data-position="fixed">		
+			<h4>Copyright @672012155 2015</h4>
+		</div>
+	</div>
+
+<!-- search -->	
+	
+	<div data-role="page" id="search">
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true">
+				<li style="padding:2pt">
+					<a href="#graffiti">
+						<img src="img/graffiti.png"/>
+						<h4>Graffiti</h4>
+						<p>Informasi tentang Graffiti</p>
+						<span class="ul-li-count">5</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#mural">
+						<img src="img/mural.jpg"/>
+						<h4>Mural</h4>
+						<p>Informasi tentang Mural</p>
+						<span class="ul-li-count">2</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#doodle">
+						<img src="img/doodle.jpg"/>
+						<h4>Doodle art</h4>
+						<p>Informasi tentang Doodle Art</p>
+						<span class="ul-li-count">2</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#apagraf">
+						<p>Apa itu Graffiti?</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#sejgraf">
+						<p>Sejarah Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#macamgraf">
+						<p>Jenis Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#fontgraf">
+						<p>Font Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#katagraf">
+						<p>Istilah dalam Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#galgraf">
+						<p>Gallery Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#apamur">
+						<p>Apa itu Mural?</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#galgraf">
+						<p>Gallery Mural</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#apadood">
+						<p>Apa itu Doodle Art?</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#galdood">
+						<p>Gallery Doodle Art</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<!-- graffiti -->	
+	
+	<div data-role="page" id="graffiti">
+		<div data-role="header" data-position="fixed">
+			<h1>Graffiti</h1>			
+		</div>
+		<div data-role="content" >
+			<ul data-role="listview">
+				<li style="padding:2pt">
+					<a href="#apagraf">
+						<p>Apa itu Graffiti?</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#sejgraf">
+						<p>Sejarah Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#macamgraf">
+						<p>Jenis Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#fontgraf">
+						<p>Font Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#katagraf">
+						<p>Istilah dalam Graffiti</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#galgraf">
+						<p>Gallery Graffiti</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div data-role="page" id="apagraf" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#graffiti" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Graffiti</h1>
+		</div>
+		<div>
+			<img src="img/apa2.jpg" class="pics" rel="group1" height="150px" width="320px" data-glisse-big="img/apa2.jpg"/>
+			<p>
+			Graffiti adalah kegiatan seni rupa yang menggunakan komposisi warna, garis, bentuk dan volume untuk menuliskan kalimat tertentu di atas dinding. Alat yang digunakan biasanya cat semprot kaleng (PILOX).Walaupun dengan skill dan peralatan yang masih sederhana, konsep tulisan dan dinding menjadi media paling aman untuk mengekspresikan pendapat secara diam-diam pada saat itu.
+			</p>
+			<p>
+			Istilah graffiti sendiri diambil dari bahasa latin, graphium yang artinya menulis. Awalnya istilah itu dipakai oleh para arkeolog untuk mendefinisikan tulisan-tulisan di bangunan kuno bangsa Mesir dan Romawi kuno.
+			</p>
+			<img src="img/apa.jpg" class="pics" rel="group1" height="150px" width="320px" data-glisse-big="img/apa.jpg"/>
+			<p>
+			Graffiti itu sendiri merupakan : Suatu kreasi seni yang di ekspresikan oleh seniman lewat media tembok beton  atau media dinding kayu serta beton yang dapat di lukis dalam bentuk huruf,gambar yang mempunyai makna tertentu sebagai curahan hati yang membuat nya di tuangkan dalam bentuk tulisan dan gambar sedemikian rupa yang biasanya memakai cat pilox sebagai cairan pewarna atau juga memakai kompressor air bruss. 
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="sejgraf" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#graffiti" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Sejarah</h1>
+		</div>
+		<div>
+			<img src="img/sejarah.jpg" class="pics" rel="group2" height="150px" width="320px" data-glisse-big="img/sejarah.jpg"/>
+			<p>
+			Kebiasaan melukis di dinding bermula dari manusia primitif sebagai cara mengkomunikasikan perburuan. Pada masa ini, graffiti digunakan sebagai sarana mistisme dan spiritual untuk membangkitkan semangat berburu. Perkembangan kesenian di zaman Mesir kuno juga memperlihatkan aktivitas melukis di dinding-dinding piramida. Lukisan ini mengkomunikasikan alam lain yang ditemui seorang pharaoh (Firaun) setelah dimumikan. 
+			</p>
+			<p>
+			Kegiatan graffiti sebagai sarana menunjukkan ketidak puasan baru dimulai pada zaman Romawi dengan bukti adanya lukisan sindiran terhadap pemerintahan di dinding-dinding bangunan. Lukisan ini ditemukan di reruntuhan kota Pompeii. Sementara di Roma sendiri dipakai sebagai alat propaganda untuk mendiskreditkan pemeluk Kristen yang pada zaman itu dilarang kaisar. 
+			</p>
+			<img src="img/sejarah2.jpg" class="pics" rel="group2" height="150px" width="320px" data-glisse-big="img/sejarah2.jpg"/>
+			<p>
+			Beberapa arkeolog mengatakan bahwa sebuah lukisan berusia 20.000 tahun pada dinding gua di selatan Perancis dapat disebut sebagai graffiti tertua di dunia. Lukisan bergambar binatang dan beraneka bentuk geometris itu kemungkinan besar merupaka symbol dari suatu klan. Sedangkan bentuk tertua dari graffiti berbentuk tulisan berasal dari zaman Yunani-Romawi. Beberapa graffiti ini masih dapat ditemukan dan dibaca di berbagai tempat bekas wilayah jajahan Yunani-Romawi, termasuk di Pompeii.
+			</p>
+			<h3>Modern</h3>
+			<img src="img/sejarah3.jpg" class="pics" rel="group2" height="150px" width="320px" data-glisse-big="img/sejarah3.jpg"/>
+			<p>
+			Ditahun 1970–an, graffiti di Amerika akhirnya merambah ke wilayah urban sebagai jati diri kelompok yang menjamur di perkotaan. Karena citranya yang kurang bagus, graffiti telanjur menjadi ancaman bagi keamanan kota. Alasannya adalah karena dianggap memprovokasi perang antar kelompok atau geng. Selain dilakukan di ruang kosong, graffiti pun sering dibuat di dinding kereta api bawah tanah. gambarannya kurang lebih bisa agan tonton di film "The Warriors", di film tersebut tergambar graffiti sebagai petanda sebagai suatu identitas geng nya masing-masing.
+			<p>
+			<h3>Indonesia</h3>
+			<img src="img/sejarah4.jpg" class="pics" rel="group2" height="150px" width="320px" data-glisse-big="img/sejarah4.jpg"/>
+			<p>
+			Di Indonesia sendiri, pada masa perang kemerdekaan graffiti menjadi alat propaganda yang efektif dalam menggelorakan semangat melawan penjajah Belanda. Keberanian menuliskan graffiti maka nyawa menjadi taruhannya. Masyarakat yang menjadi penulis graffiti pada saat itu menjadi posisi yang penting juga dalam masa peran kemerdekaan. 
+			</p>
+			<img src="img/sejarah5.jpg" class="pics" rel="group2" height="150px" width="320px" data-glisse-big="img/sejarah5.jpg"/>
+			<p>
+			Pelukis Affandi pada masa peperangan melawan penjajahan Belanda pernah membuat slogan yang dia buat ”Boeng Ajo Boeng!” yang kemudian dituliskan di tembok-tembok jalanan. Dalam berbagai penelitian mengenai graffiti, misalnya, hampir selalu disebutkan bahwa sejarah graffiti di Indonesia bisa dirujuk dari masa awal kemerdekaan ketika di tembok-tembok kota ditorehkan “Merdeka atau Mati!” oleh para pejuang.
+			</p>
+			<p>
+			Puluhan tahun berlalu, dan graffiti menjadi alat yang cukup efektif untuk menuliskan protes-protes kaum muda terhadap pemerintahan yang korup dan tirani, serta pada sistem sosial yang bobrok. Pada pertengahan 1990an, ketika mobilitas global mulai terbuka dan persentuhan kaum muda dengan budaya alternatif dari seluruh dunia menjadi semakin kuat, bentuk-bentuk graffiti (bersamaan dengan masuknya genre budaya independen), apa yang disebut sebagai graffiti ini berkembang, dan menjadi tumpang tindih dengan apa yang didefinisikan sebagai “seni jalanan” (street art). 
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+	<div data-role="page" id="macamgraf" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#graffiti" data-icon="arrow-l" data-rel="back">back</a>
+			<h1>Jenis</h1>
+		</div>
+		<div>
+			<h3>Tagging</h3>
+			<img src="img/macam1.jpg" class="pics" rel="group3" height="150px" width="320px" data-glisse-big="img/macam1.jpg"/>
+			<p>
+			Gaya graffiti jenis ini lahir di Philadelphia di tahun 1960an. Dipelopori oleh Cornbread dan Cool Earl. Karena hanya tagging, biasanya graffiti jenis ini cuma berupa semacam tanda tangan sang graffiti artist di tempat-tempat di seluruh kota. Salah seorang yang paling dikenal adalah TAKI 183, seorang graffiti artis dari New York yang menandai seluruh kota New York (yang biasa dilaluinya dengan tanda tangannya, TAKI 183 tadi). Setelah profilnya masuk media, banyak anak muda NY kemudian mengikuti gaya graffitinya. Contoh Graffiti tagging-nya TAKI 183
+			</p>
+			
+			<h3>Bombing</h3>
+			<img src="img/macam2.jpg" class="pics" rel="group3" height="150px" width="320px" data-glisse-big="img/macam2.jpg"/>
+			<p>
+			Dalam dunia per-graffitian, “bombing” sering disebut sebagai kegiatan vandalisme, karena biasanya bomber (sebutan untuk orang yang melakukan bombing) meletakkan logo atau tandanya di tempat-tempat milik orang lain (tanpa ijin tentunya). Bentuk bombing bisa bermacam-macam, namun kesemuanya terjadi secara ilegal.
+			</p>
+			
+			<h3>Graffiti berdasar tempat</h3>
+			<img src="img/macam3.jpg" class="pics" rel="group3" height="150px" width="320px" data-glisse-big="img/macam3.jpg"/>
+			<p>
+			Subway graffiti, biasanya di luar negeri tempat pertama yang jadi sasaran para pembuat graffiti adalah di subway, terutama di daerah New York. Nama untuk graffiti yang dilakukan di subway beda-beda, mulai dari panel piece (yang digambarkan di bagian bawah jendela kereta dari pintu ke pintu), coverall (di semua bagian termasuk jendela) sampai whole trains (kesemua kereta 8-10 gerbong)
+			</p>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div data-role="page" id="fontgraf" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#graffiti" data-icon="arrow-l" data-rel="back">back</a>
+			<h1>Font</h1>
+		</div>
+		<div>
+			<h3>Bubble</h3>
+			<p>
+			merupakan tulisan atau font graffiti yang berbentuk seperti gelembung-gelembung.
+			<img src="img/fon1.jpg" class="pics" rel="group4" height="150px" width="320px" data-glisse-big="img/fon1.jpg"/>
+			</p>
+			<h3>Throw Up</h3>
+			<p>
+			graffiti yang berpenampilan/bercorak warna yang sederhana
+			<img src="img/fon2.jpg" class="pics" rel="group4" height="150px" width="320px" data-glisse-big="img/fon2.jpg"/>
+			</p>
+			<h3>Roll Up</h3>
+			<p>
+			tulisan graffiti yang berkomposisi warna hitam dan putih, warna dalam tulisan yang berwarna putih dan garis luarnya yang berwarna hitam.
+			<img src="img/fon3.jpg" class="pics" rel="group4" height="150px" width="320px" data-glisse-big="img/fon3.jpg"/>
+			</p>
+			<h3>Stencil</h3>
+			<p>
+			gambar yang dibuat menggunakan cetakan atau mal, kemudian dicat atau disemprot dengan cat semprot.
+			<img src="img/fon4.jpg" class="pics" rel="group4" height="150px" width="320px" data-glisse-big="img/fon4.jpg"/>
+			</p>
+			<h3>Wildstyle</h3>
+			<p>
+			tulisan yang dibuat oleh bomber yang sulit untuk dibaca, hanya orang orang tertentu yang bisa membaca atau bomber tersebut.
+			<img src="img/fon5.jpg" class="pics" rel="group4" height="150px" width="320px" data-glisse-big="img/fon5.jpg"/>
+			</p>
+			<h3>3D</h3>
+			<p>
+			merupakan tulisan graffiti yang seakan akan bisa dilihat dari 3 arah.
+			<img src="img/fon6.jpg" class="pics" rel="group4" height="150px" width="320px" data-glisse-big="img/fon6.jpg"/>
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div data-role="page" id="katagraf" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#graffiti" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Istilah</h1>
+		</div>
+		<div>
+			<h3>bomb</h3>
+			<p>Kegiatan atau proses yang sedang dilakukan ketika sedang membuat graffiti.
+			</p>
+			<h3>piece</h3>
+			<p>Setiap satu karya yang telah dibuat dalam satu kata atau singkatan.
+			</p>
+			<h3>tag</h3>
+			<p>Ciri khas atau bisa dikatakan tanda tangan yang disertakan pada satu piece atau tanpa disertai piece.
+			</p>
+			<h3>drip</h3>
+			<p>Cat yang meleleh karena terlalu tebal ketika disemprotkan.
+			</p>
+			<h3>cans</h3>
+			<p>Kaleng yang berisi cat yang digunakan untuk graffiti.
+			</p>
+			<h3>caps</h3>
+			<p>Ujung kepala Cans yang menghasilkan bentuk dan ukuran semprotan yang beragam.
+			</p>
+			<h3>marker</h3>
+			<p>Bisa dibilang spidol, namun spidol yang permanen dan kebasahan yang tinggi.
+			</p>
+			<h3>sketch</h3>
+			<p>Konsep graffiti yang ditulis di kertas.
+			</p>
+			<h3>bomber</h3>
+			<p>Seseorang yang membuat graffiti
+			</p>
+			<h3>crew</h3>
+			<p>Suatu kelompok graffiti yang terdiri dari beberapa bomber yang semuanya memiliki nickname masing-masing.
+			</p>
+			<h3>wheat paste</h3>
+			<p>Gambar pada kertas yang dilekatkan pada dinding dengan menggunakan tepung.
+			</p>
+			<h3>blockbuster</h3>
+			<p>Sebuah piece yang berukuran sangat besar, panjangnya bisa mencapai belasan meter.
+			</p>
+			<h3>stencil</h3>
+			<p>Sebuah graffiti yang dibuat dengan menggunakan cetakan.
+			</p>
+			<h3>masker</h3>
+			<p>Penutup atau pengaman pernafasan pada saat Bombing.
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="galgraf" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#graffiti" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Gallery</h1>
+		</div>
+		<div>
+					<img src="img/11.jpg" class="pics" rel="group7" height="150px" width="320px" data-glisse-big="img/11.jpg"/>
+					<img src="img/12.jpg" class="pics" rel="group7" height="150px" width="320px" data-glisse-big="img/12.jpg"/>
+					<img src="img/13.jpg" class="pics" rel="group7" height="150px" width="320px" data-glisse-big="img/13.jpg"/>
+					<img src="img/14.jpg" class="pics" rel="group7" height="150px" width="320px" data-glisse-big="img/14.jpg"/>
+					<img src="img/15.jpg" class="pics" rel="group7" height="150px" width="320px" data-glisse-big="img/15.jpg"/>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+<!-- mural -->	
+	
+	
+	<div data-role="page" id="mural">
+		<div data-role="header" data-position="fixed">
+			<h1>Mural</h1>			
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li style="padding:2pt">
+					<a href="#apamur">
+						<p>Apa itu Mural?</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#galgraf">
+						<p>Gallery Mural</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="apamur" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#mural" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Mural</h1>
+		</div>
+		<div>
+			<p>
+			<img src="img/mural1.jpg" class="pics" rel="group5" height="150px" width="320px" data-glisse-big="img/mural1.jpg"/>
+			Seni mural merupakan salah satu seni gambar yang menggunakan media tembok sebagai medianya. Mural berasal dari kata ‘murus’, kata dari bahasa Latin yang memiliki arti dinding. Dalam pengertian kontemporer, mural berarti lukisan berukuran besar yang dibuat pada dinding (interior ataupun eksterior), langit-langit, atau bidang datar lainnya. Akar muasal sejarah mural dimulai jauh sebelum peradaban modern, bahkan diduga sejak 30.000 tahun sebelum Masehi. Sejumlah gambar prasejarah pada dinding gua di Altamira, Spanyol, dan Lascaux, Prancis, yang melukiskan aksi-aksi berburu, meramu, dan aktivitas relijius, kerap kali disebut sebagai bentuk mural generasi pertama
+			</p>
+			<p>
+			<img src="img/mural2.jpg" class="pics" rel="group5" height="150px" width="320px" data-glisse-big="img/mural2.jpg"/>
+			Selain memiliki nilai estetika yang dapat memperindah kota, mural juga merupakan salah satu media yang efektif dalam menyampaikan sebuah pesan. Oleh karena itu mural dapat digunakan oleh masyarakat sebagai media untuk menyalurkan aspirasi karena melalui seni mural sosialisasi yang dilakukan diharapkan akan lebih komunikatif untuk masuk ruang publik. 
+			</p>
+			<p>
+			<img src="img/mural3.jpg" class="pics" rel="group5" height="150px" width="320px" data-glisse-big="img/mural3.jpg"/>
+			Dalam perkembangannya seni mural sebagai media untuk menyampaikan sebuah pesan juga banyak dimafaatkan oleh perusahaan sebagai media beriklan. Melalui pesan yang ditampilkan dalam lukisan di dinding-dinding ruang publik, diharapkan masyarakat yang melihat iklan tersebut dapat memperoleh informasi akan produk. Hal itu biasanya pada produk baru dengan tujuan untuk membentuk permintaan pertama atau untuk membujuk masyarakat agar membandingkan keunggulan produknya dibandingkan dengan merek dari pesaingnya sehingga membentuk permintaan selektif atas merek perusahaannya, media iklan seperti ini diharapkan mendatangkan motivasi kognitif dan afektif secara serentak pada masyarakat. Selain itu, pesan dalam iklan tersebut ditampilkan oleh perusahaan karena bertujuan untuk menyakinkan masyarakat yang sudah mengkonsumsi bahwa mereka telah melakukan pilihan yang tepat dengan cara mengonsumsi produk tersebut.
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="galmur" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#mural" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Gallery</h1>
+		</div>
+		<div>
+			<img src="img/21.jpg" class="pics" rel="group8" height="150px" width="320px" data-glisse-big="img/21.jpg"/>
+			<img src="img/22.jpg" class="pics" rel="group8" height="150px" width="320px" data-glisse-big="img/22.jpg"/>
+			<img src="img/23.jpg" class="pics" rel="group8" height="150px" width="320px" data-glisse-big="img/23.jpg"/>
+			<img src="img/24.jpg" class="pics" rel="group8" height="150px" width="320px" data-glisse-big="img/24.jpg"/>
+			<img src="img/25.jpg" class="pics" rel="group8" height="150px" width="320px" data-glisse-big="img/25.jpg"/>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<!-- doodle -->	
+	
+	
+	<div data-role="page" id="doodle">
+		<div data-role="header" data-position="fixed">
+			<h1>Doodle Art</h1>			
+		</div>
+		<div data-role="content">
+			<ul data-role="listview">
+				<li style="padding:2pt">
+					<a href="#apadood">
+						<p>Apa itu Doodle Art?</p>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href="#galdood">
+						<p>Gallery Doodle Art</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="apadood" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#doodle" data-icon="arrow-l" data-rel="back">back</a>
+			<h1>Doodle Art</h1>
+		</div>
+		<div>
+			<p>
+			<img src="img/doodle1.jpg" class="pics" rel="group6" height="150px" width="320px" data-glisse-big="img/doodle1.jpg"/>
+			Mungkin sebagian dari kamu sudah tidak asing dengan istilah doodle. Doodle jika diartikan secara harfiah ke bahasa indonesia berarti "mencoret". Mencoret merupakan hal paling gampang dan mudah di lakukan, dengan media untuk menulis, seperti kertas, pulpen dan pencil, kita dapat menghasilkan sebuah coretan. Kegiatan "mencoret" seperti ini juga sering disebut dengan doodling.
+			</p>
+			<p>
+			<img src="img/doodle2.jpg" class="pics" rel="group6" height="150px" width="320px" data-glisse-big="img/doodle2.jpg"/>
+			Doodle Art sendiri adalah suatu gaya menggambar dengan cara mencoret, terlihat abstract, ada yang tidak bermakna juga ada yang bermakna, terkadang karya yang dihasilkan tidak memiliki bentuk yang benar namun terlihat unik dan menarik.
+			</p>
+			<p>
+			Sebuah karya doodle biasanya melukiskan perasaan si pembuatnya, bisa terlihat dari goresan-goresan yang dihasilkan, kadang keluar tanpa disadari oleh pikiran kita. Doodle art kadang mampu menenangkan hati si pembuatnya. Semakin di buat dengan sepenuh jiwa dan perasaan, karya yang dihasilkan semakin menarik, unik dan bermakna dalam, dan itu membuat karya doodle tidak sekedar jadi hobi corat-coret, tapi juga mempunyai kedalaman makna dan gaya. 
+			</p>
+			<p>
+			<img src="img/doodle3.jpg" class="pics" rel="group6" height="150px" width="320px" data-glisse-big="img/doodle3.jpg"/>
+			Sekarang Doodle art semakin berkembang, bentuknya yang abstract dan memiliki keunikkan tersendiri membuat pelakonnya semakin bertambah dari hari ke hari. Bahkan tanpa disadari kita sering menghasilkan karya doodle, contohnya saat kamu merasa bosan pelajaran dikelas, pastinya sering mencoret-coret di kertas tulis kan?? coretan tersebut adalah doodle art. 
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div data-role="page" id="galdood" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<a href="#doodle" data-icon="arrow-l"data-rel="back">back</a>
+			<h1>Gallery</h1>
+		</div>
+		<div>
+			<p>
+			<img src="img/31.jpg" class="pics" rel="group9" height="150px" width="320px" data-glisse-big="img/31.jpg"/>
+			<img src="img/32.jpg" class="pics" rel="group9" height="150px" width="320px" data-glisse-big="img/32.jpg"/>
+			<img src="img/33.jpg" class="pics" rel="group9" height="150px" width="320px" data-glisse-big="img/33.jpg"/>
+			<img src="img/34.jpg" class="pics" rel="group9" height="150px" width="320px" data-glisse-big="img/34.jpg"/>
+			<img src="img/35.jpg" class="pics" rel="group9" height="150px" width="320px" data-glisse-big="img/35.jpg"/>
+			</p>
+		</div>
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#search" data-icon="search">search</a></li>
+					<li><a href="#main" data-icon="home">home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	
+</body>
